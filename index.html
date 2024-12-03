@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Page</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Pet Page</h1>
+        <p>Encontre seu novo amigo e aprenda a cuidar melhor dos seus pets!</p>
+        <i class="material-icons" id="burguer" onclick="clickMenu()"></i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 01</a></li>
+                <li><a href="#">Opção 02</a></li>
+                <li><a href="#">Opção 03</a></li>
+                <li><a href="#">Opção 04</a></li>
+                <li><a href="#">Opção 05</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main class="container">
+        <section class="gallery" id="adoption">
+            <h2>Adote um Pet</h2>
+            <div class="pet-cards">
+                <div class="pet-card">
+                    <img src="imagens/dirceu-edit.png" alt="Gato Dirceu">
+                    <p>Dirceu</p>
+                    <button>Adotar</button>
+                </div>
+                <div class="pet-card">
+                    <img src="imagens/kira-edit.png" alt="Gato Kira">
+                    <p>Kira</p>
+                    <button>Adotar</button>
+                </div>
+                <div class="pet-card">
+                    <img src="imagens/lilica-edit.png" alt="Gato Lilica">
+                    <p>Lilica</p>
+                    <button>Adotar</button>
+                </div>
+                <div class="pet-card">
+                    <img src="imagens/malu-edit.png" alt="Gato Malu">
+                    <p>Malu</p>
+                    <button>Adotar</button>
+                </div>
+                <div class="pet-card">
+                    <img src="imagens/thor-edit.png" alt="Gato Thor">
+                    <p>Thor</p>
+                    <button>Adotar</button>
+                </div>
+                <div class="pet-card">
+                    <img src="imagens/tonho-edit.png" alt="Gato Tonho">
+                    <p>Tonho</p>
+                    <button>Adotar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma iniciativa dedicada a resgatar e encontrar lares amorosos para animais abandonados. Nossa missão é conscientizar sobre a importância da adoção e garantir que cada animal encontre um lar seguro e amoroso!</p>
+        </section>
+
+        <section class="care" id="care">
+            <h2>Cuidados Essenciais com Pets</h2>
+            <p>Os cuidados com os pets adotados são essenciais para que tenham uma vida longa e feliz. Aqui estão algumas dicas importantes:</p>
+            
+            <h3>Alimentação</h3>
+            <p>Qualidade da Ração: Escolha uma ração de alta qualidade, apropriada para a idade, porte e saúde do animal. Evite alimentá-los com restos de comida humana, pois muitos ingredientes são prejudiciais.</p>
+            <p>Quantidade e Frequência: Mantenha horários regulares e ofereça a quantidade correta de acordo com o peso e nível de atividade do animal.</p>
+            <p>Água Fresca: Ofereça água fresca e limpa constantemente. Para gatos, fontes de água podem incentivá-los.</p>
+            
+            <h3>Saúde</h3>
+            <p>Vacinação e Vermifugação: Mantenha as vacinas em dia e vermifugue regularmente.</p>
+            <p>Consultas Veterinárias: Leve seu pet ao veterinário ao menos uma vez por ano para check-ups.</p>
+            
+            <h3>Higiene</h3>
+            <p>Higiene Bucal e Corporal: Escove os dentes e o pelo do seu pet e dê banhos regulares.</p>
+            <p>Controle de Pulgas e Carrapatos: Use antipulgas e anticarrapatos adequados.</p>
+        </section>
+
+        <section class="donate" id="donate">
+            <h2>Quero Ajudar</h2>
+            <p>A Pet Page conecta animais em abrigos com pessoas que procuram um novo amigo. Você pode ajudar fazendo uma doação!</p>
+            <h3>Formas de Doação:</h3>
+            <p><strong>PIX:</strong> petpage@.com ou CNPJ: 00.000.000/0000-00</p>
+            <p><strong>TED ou Depósito:</strong></p>
+            <p>Banco: xxxx | Agência: 000 | Conta-corrente: 0000</p>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contato</h2>
+            <p>Email: contato@petpage.com</p>
+            <p>Telefone: (00) 1234-5678</p>
+            <p>Redes sociais: <a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+        </section>
+    </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                 itens.style.display = 'block'
+            }
+            else {
+                itens.style.display = 'none'
+            }
+
+        }
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            }
+            else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+    <footer>
+        <p>&copy; 2024 - Pet Page. Todos os direitos reservados.</p>
+        <p>Criado por Vinícius B <a href="#"><img src="img/github-white.png" alt="GitHub"></a> <a href="#"><img src="img/linkedin-white.png" alt="LinkedIn"></a></p>
+    </footer>
+</body>
+</html>
