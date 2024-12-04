@@ -1,14 +1,153 @@
 @charset "UTF-8";
 
-/* Global Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-body {
-    background-color: black;
 }
 
-main
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../imagens/10223968.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #00FFFF;
+    padding: 20px;
+    position: relative;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.411);
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #666;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#burguer {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-top: 10px; /
+    align-self: center; 
+}
+
+menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+menu ul li a:hover {
+    color: #ff6347;
+}
+
+main.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#galery {
+    display: grid;
+    gap: 20px; 
+    justify-content: center; 
+    grid-template-columns: repeat(3, 1fr); 
+    max-width: 1000px; 
+    margin: 0 auto;
+}
+
+#galery img {
+    height: 300px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+#galery div#pet-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: aqua;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.123);
+}
+
+#galery p {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+#galery button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+#galery button:hover {
+    background-color: #e55337;
+}
+
+#banner {
+    display: block;
+    text-align: center;
+    width: 80vw;
+    margin: 20px;
+    
+}
+
+.setores {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.411);
+
+}
+
+#map {
+    display: flex;
+    width: 80vw;
+    height: 50vh;
+    margin: auto;
+    
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
