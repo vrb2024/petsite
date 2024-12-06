@@ -79,6 +79,7 @@ main.container {
     grid-template-columns: repeat(3, 1fr); 
     max-width: 1000px; 
     margin: 0 auto;
+    
 }
 
 #galery img {
@@ -95,6 +96,7 @@ main.container {
     text-align: center;
     background-color: aqua;
     padding: 15px;
+    border: 2px solid white;
     border-radius: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.123);
 }
@@ -121,10 +123,10 @@ main.container {
 
 #banner {
     display: block;
+    margin: 20px auto; /* Centraliza horizontalmente */
     text-align: center;
-    width: 80vw;
-    margin: 20px;
-    
+    width: 80vw; /* Ajuste proporcional ao tamanho da viewport */
+    max-width: 600px; /* Limite para telas maiores */
 }
 
 .setores {
@@ -150,4 +152,8 @@ footer {
     text-align: center;
     padding: 10px;
     margin-top: 40px;
+}
+
+.icons {
+    height: 16px;
 }
