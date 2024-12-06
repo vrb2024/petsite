@@ -123,10 +123,10 @@ main.container {
 
 #banner {
     display: block;
-    margin: 20px auto; /* Centraliza horizontalmente */
+    margin: 20px auto; 
     text-align: center;
-    width: 80vw; /* Ajuste proporcional ao tamanho da viewport */
-    max-width: 600px; /* Limite para telas maiores */
+    width: 80vw; 
+    max-width: 600px; 
 }
 
 .setores {
