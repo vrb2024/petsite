@@ -170,12 +170,11 @@ footer {
     height: 16px;
 }
 
-/* Estilo básico do botão de "Voltar ao Topo" */
 #backToTop {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #0bb8b8; /* Cor da paleta */
+    background-color: #0bb8b8;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -183,8 +182,8 @@ footer {
     font-size: 16px;
     cursor: pointer;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    display: none; /* Inicialmente escondido */
+    display: none;
 }
 #backToTop:hover {
-    background-color: #ff6347; /* Cor alternativa para hover */
+    background-color: #ff6347
 }
