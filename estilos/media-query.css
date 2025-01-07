@@ -1,18 +1,25 @@
 @charset "UTF-8";
 
 @media (max-width: 768px) {
+    header {
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.411) !important;
+    }
+
     #galery {
-        margin-top: 20px;
+        
         grid-template-columns: repeat(2, 1fr);
     }
 
     #burguer {
-        margin-top: 10px;
         position: relative;
     }
 }
 
 @media screen and (min-width: 769px) {
+    header {
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.411);
+    }
+
     #galery {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -20,10 +27,14 @@
     i#burguer {
         display: none;
     }
-
 }
 
 @media screen and (min-width: 940px) {
+    
+    header {
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.411);
+    }
+
     #galery {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -32,5 +43,8 @@
 @media screen and (min-width: 1180px) {
     #galery {
         grid-template-columns: repeat(5, 1fr);
+    }
+    header {
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.411);
     }
 }
