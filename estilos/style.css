@@ -22,8 +22,11 @@ header {
     text-align: center;
     background-color: #0bb8b8;
     padding: 20px;
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.411);
+    z-index: 1000;
 }
 
 header h1 {
@@ -33,30 +36,41 @@ header h1 {
 }
 
 header p {
-    color: #666;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+    
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
 }
 
 #burguer {
     display: block;
     font-size: 2rem;
     cursor: pointer;
-    margin-top: 10px; /
-    align-self: center; 
+    margin-top: 20px;
+    align-self: center;
+}
+
+menu {
+    position: fixed;
+    top: 70px;
+    width: 100%;
+    background-color: #0bb8b8;
+    z-index: 999;
 }
 
 menu ul {
     display: flex;
     list-style: none;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 20px;
     padding: 10px 0;
 }
 
 menu ul li a {
     text-decoration: none;
-    color: #333;
+    color: white;
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -65,26 +79,22 @@ menu ul li a:hover {
     color: #ff6347;
 }
 
-menu ul li a {
-    color: white;
-}
-
 main.container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    margin-top: 140px;
 }
 
 #galery {
     display: grid;
-    gap: 20px; 
-    justify-content: center; 
-    grid-template-columns: repeat(3, 1fr); 
-    max-width: 1000px; 
+    gap: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1000px;
     margin: 0 auto;
     color: white;
-    
 }
 
 #galery img {
@@ -128,10 +138,10 @@ main.container {
 
 #banner {
     display: block;
-    margin: 20px auto; 
+    margin: 20px auto;
     text-align: center;
-    width: 80vw; 
-    max-width: 600px; 
+    width: 80vw;
+    max-width: 600px;
 }
 
 .setores {
@@ -140,7 +150,6 @@ main.container {
     padding: 20px;
     border-radius: 20px;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.411);
-
 }
 
 #map {
@@ -148,7 +157,6 @@ main.container {
     width: 80vw;
     height: 50vh;
     margin: auto;
-    
 }
 
 footer {
